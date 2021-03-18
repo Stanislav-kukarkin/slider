@@ -1,3 +1,5 @@
+var timerId = setInterval(plusSlide, 2000);
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -12,11 +14,7 @@ function minusSlide() {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-function showSlides(n) {
-    setInterval(function(){
-        showSlides(n)
-    },1000)
-}
+
 
 function showSlides(n) {
     var i;
@@ -42,6 +40,12 @@ function showSlides(n) {
 }
 
 
+
+//function showSlides() {
+    //setInterval(function(){
+    //    showSlides()
+    //},1000);
+//}
 
 
 
